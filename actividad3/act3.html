@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="st.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otro form</title>
+</head>
+<body>
+    <h1>MINIForm</h1>
+    <div class="divi">
+        <form>
+            <label>name completo: </label>
+            <input type="text" id="N"><br>
+            <input type="submit" value="ok" id="B">
+        </form>
+        <hr>
+        <p>tu name es;: </p>
+        <p id="Nom"></p>
+    </div>
+
+    <script>
+        document.getElementById("B").addEventListener("click", function(event) {
+            event.preventDefault();
+            const nombre = document.getElementById("N").value;
+            document.getElementById("Nom").textContent = nombre;
+        });
+    </script>
+</body>
+</html>
