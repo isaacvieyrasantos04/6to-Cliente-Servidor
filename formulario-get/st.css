@@ -1,0 +1,11 @@
+body{
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box{
+    text-align: center;
+    background-color: beige;
+    padding: 100px;
+    margin: 50px;
+    border-radius: 20px;
+}
