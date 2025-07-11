@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form-dats</title>
+</head>
+<body>
+    <h1>Registro de Persona</h1>
+    <form action="guardar.php" method="POST">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br>
+
+        <label>Apellido:</label><br>
+        <input type="text" name="apellido" required><br>
+
+        <label>Correo Electrónico:</label><br>
+        <input type="email" name="correo_electronico" required><br>
+
+        <label>Teléfono:</label><br>
+        <input type="text" name="telefono" required><br>
+
+        <label>Fecha de Nacimiento:</label><br>
+        <input type="date" name="fecha_nacimiento" required><br>
+
+        <label>CURP:</label><br>
+        <input type="text" name="curp" required><br>
+
+        <label>RFC:</label><br>
+        <input type="text" name="rfc" required><br>
+
+        <label>Género:</label><br>
+        <select name="genero" required>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
+        </select><br>
+
+        <label>País:</label><br>
+        <input type="text" name="pais" required><br><br>
+
+        <input type="submit" value="Guardar">
+    </form>
+
+    <br>
+    <a href="data.php">ver info registrada</a>
+</body>
+</html>
