@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sistema-de-reservaciones</title>
+</head>
+<body>
+    <h2>AGENDA TU RESERVACION</h2>
+    <form action="save.php" method="POST">
+        <label>NOMBRE(S):</label><br>
+        <input type="text" name="nombre" required><br><br>
+        <label>SERVICIO:</label><br>
+        <input type="text" name="servicio" required><br><br>
+        <label>FECHA:</label><br>
+        <input type="date" name="fecha" required><br><br>
+        <label>HORA:</label><br>
+        <input type="time" name="hora" required><br><br>
+        <input type="submit" value="Guardar">
+    </form>
+    <br><a href="show.php">ver lista de reservaciones realizadas...</a>
+</body>
+</html>
