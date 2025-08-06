@@ -1,0 +1,39 @@
+CREATE DATABASE IF NOT EXISTS dbpinterest;
+
+
+CREATE TABLE administrador (
+    idadmin INT PRIMARY KEY AUTO_INCREMENT,
+    nameadmin TEXT (20),
+    email VARCHAR(100),
+    password VARCHAR(50)
+);
+
+CREATE TABLE usuario (
+    iduser INT PRIMARY KEY AUTO_INCREMENT,
+    nombreuser TEXT (20),
+    email VARCHAR(100),
+    password VARCHAR(50),
+    pfp URL
+);
+
+CREATE TABLE tablero (
+    idtab INT PRIMARY KEY AUTO_INCREMENT,
+    nombretab TEXT (20),
+    descripción TEXT (100),
+    img URL,
+    fechac DATE
+);
+
+CREATE TABLE pin (
+    idpin INT PRIMARY KEY AUTO_INCREMENT,
+    titulo TEXT (50),
+    descripción TEXT (100),
+    foto URL,
+    fechac DATE
+);
+
+CREATE TABLE comentario (
+    idcom INT PRIMARY KEY AUTO_INCREMENT,
+    contenido VARCHAR (500),
+    fechac DATE
+);
