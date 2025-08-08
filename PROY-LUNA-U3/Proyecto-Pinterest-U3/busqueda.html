@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Búsqueda</title>
+
+  <link rel="stylesheet" href="busqueda.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="busqueda.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Búsqueda</h1>
+    <input type="text" id="inputBusqueda" class="buscador" placeholder="¿Qué deseas encontrar?" />
+  </header>
+
+  <main class="galeria" id="resultados">
+    <div class="pin"><img src="libros.jpg" alt=""><p>Libros</p></div>
+    <div class="pin"><img src="naturaleza.jpg" alt=""><p>Naturaleza</p></div>
+    <div class="pin"><img src="viajes.jpg" alt=""><p>Viajes</p></div>
+    <div class="pin"><img src="decoracion.jpg" alt=""><p>Decoración</p></div>
+  </main>
+
+  <nav class="nav">
+    <a href="Index.html"><i class="fas fa-home"></i></a>
+    <a href="busqueda.html"><i class="fas fa-search"></i></a>
+    <a href="subir.html"><i class="fas fa-plus-circle"></i></a>
+    <a href="comentarios.html"><i class="fas fa-comment-dots"></i></a>
+    <a href="perfil.html" onclick="irAlPerfil()"><i class="fas fa-user"></i></a>
+  </nav>
+
+</body>
+</html>

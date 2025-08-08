@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f9f5f2;
+  color: #333;
+}
+
+.header {
+  background-color: #c7b5dd;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.comentarios-section {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.comentario-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.comentario-form textarea {
+  resize: vertical;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.comentario-form textarea:focus {
+  border-color: #a18cd1;
+}
+
+.btn-enviar {
+  align-self: flex-end;
+  padding: 0.6rem 1.2rem;
+  background-color: #a18cd1;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #8b72bf;
+}
+
+.comentarios-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comentario {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.comentario p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #d9cde8;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav a {
+  color: #444;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #7e5cc3;
+}
